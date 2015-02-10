@@ -88,10 +88,10 @@
                         </tr><tr>
                             <td>be</td>
                             <td>Belarusian</td>
-                            <td>4</td>
-                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : ((n % 10 == 0 || n % 10 &gt;= 5 &amp;&amp; n % 10 &lt;= 9 || n % 100 &gt;= 11 &amp;&amp; n % 100 &lt;= 14) ? 2 : 3))</td>
+                            <td>3</td>
+                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
                             <td>
-                                <ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>many</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span></li></ol>
+                                <ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol>
                             </td>
                         </tr><tr>
                             <td>bem</td>
@@ -1032,10 +1032,10 @@
                         </tr><tr>
                             <td>pl</td>
                             <td>Polish</td>
-                            <td>4</td>
-                            <td>(n == 1) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : ((n != 1 &amp;&amp; (n % 10 == 0 || n % 10 == 1) || n % 10 &gt;= 5 &amp;&amp; n % 10 &lt;= 9 || n % 100 &gt;= 12 &amp;&amp; n % 100 &lt;= 14) ? 2 : 3))</td>
+                            <td>3</td>
+                            <td>(n == 1) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
                             <td>
-                                <ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>many</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span></li></ol>
+                                <ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol>
                             </td>
                         </tr><tr>
                             <td>prg</td>
@@ -1104,10 +1104,10 @@
                         </tr><tr>
                             <td>ru</td>
                             <td>Russian</td>
-                            <td>4</td>
-                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : ((n % 10 == 0 || n % 10 &gt;= 5 &amp;&amp; n % 10 &lt;= 9 || n % 100 &gt;= 11 &amp;&amp; n % 100 &lt;= 14) ? 2 : 3))</td>
+                            <td>3</td>
+                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
                             <td>
-                                <ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>many</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span></li></ol>
+                                <ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol>
                             </td>
                         </tr><tr>
                             <td>rwk</td>
@@ -1440,10 +1440,10 @@
                         </tr><tr>
                             <td>uk</td>
                             <td>Ukrainian</td>
-                            <td>4</td>
-                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : ((n % 10 == 0 || n % 10 &gt;= 5 &amp;&amp; n % 10 &lt;= 9 || n % 100 &gt;= 11 &amp;&amp; n % 100 &lt;= 14) ? 2 : 3))</td>
+                            <td>3</td>
+                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
                             <td>
-                                <ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>many</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span></li></ol>
+                                <ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol>
                             </td>
                         </tr><tr>
                             <td>ur</td>
