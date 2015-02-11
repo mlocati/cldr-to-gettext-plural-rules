@@ -1,0 +1,18 @@
+ol.cases code {
+	white-space: nowrap;
+	display: block;
+	clear: both;
+}
+ol.cases code::before {
+	content: "Examples";
+	background-color: #f0ad4e;
+	display: inline;
+	padding: .2em .6em .3em;
+	font-size: 100%;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	vertical-align: baseline;
+	border-radius: 0.25em;
+	margin: -0.2em 0.5em -.2em -0.6em;
+}
