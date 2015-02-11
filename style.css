@@ -13,6 +13,6 @@ ol.cases code::before {
 	line-height: 1;
 	color: #fff;
 	vertical-align: baseline;
-	border-radius: 0.25em;
+	border-radius: 0.25em 0 0 0.25em;
 	margin: -0.2em 0.5em -.2em -0.6em;
 }
