@@ -17,7 +17,7 @@
 	<complexType name="languageType">
 		<sequence>
 			<element name="formula" type="tns:formulaType" minOccurs="1" maxOccurs="1" />
-			<element name="categories" type="tns:categoriesType" minOccurs="1" maxOccurs="1" />
+			<element name="category" type="tns:categoryType" minOccurs="1" maxOccurs="6" />
 		</sequence>
 		<attribute name="id" type="tns:languageIdType" use="required" />
 		<attribute name="name" type="tns:languageNameType" use="required" />
@@ -41,12 +41,6 @@
 			<pattern value="[n%0-9 ()?:|=!&gt;&lt;&amp;]{1,}" />
 		</restriction>
 	</simpleType>
-
-	<complexType name="categoriesType">
-		<sequence>
-			<element name="category" type="tns:categoryType" minOccurs="1" maxOccurs="6" />
-		</sequence>
-	</complexType>
 
 	<complexType name="categoryType">
 		<attribute name="id" type="tns:categoryIdType" use="required" />
