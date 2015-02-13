@@ -23,1159 +23,1380 @@
                         <th>Plurals</th>
                     </tr>
                 </thead>
-                <tbody><tr>
-                            <td>af</td>
-                            <td>Afrikaans</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ak</td>
-                            <td>Akan</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>am</td>
-                            <td>Amharic</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ar</td>
-                            <td>Arabic</td>
-                            <td>6</td>
-                            <td>(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n % 100 &gt;= 3 &amp;&amp; n % 100 &lt;= 10) ? 3 : ((n % 100 &gt;= 11 &amp;&amp; n % 100 &lt;= 99) ? 4 : 5))))</td>
-                            <td><ol class="cases" start="0"><li><span>zero</span><code>0</code></li><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>few</span><code>3~10, 103~110, 1003, …</code></li><li><span>many</span><code>11~26, 111, 1011, …</code></li><li><span>other</span><code>100~102, 200~202, 300~302, 400~402, 500~502, 600, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>asa</td>
-                            <td>Asu</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ast</td>
-                            <td>Asturian</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>az</td>
-                            <td>Azerbaijani</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>be</td>
-                            <td>Belarusian</td>
-                            <td>3</td>
-                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>bem</td>
-                            <td>Bemba</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>bez</td>
-                            <td>Bena</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>bg</td>
-                            <td>Bulgarian</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>bh</td>
-                            <td>Bihari</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>bm</td>
-                            <td>Bambara</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>bn</td>
-                            <td>Bengali</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>bo</td>
-                            <td>Tibetan</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>br</td>
-                            <td>Breton</td>
-                            <td>5</td>
-                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11 &amp;&amp; n % 100 != 71 &amp;&amp; n % 100 != 91) ? 0 : ((n % 10 == 2 &amp;&amp; n % 100 != 12 &amp;&amp; n % 100 != 72 &amp;&amp; n % 100 != 92) ? 1 : ((((n % 10 == 3 || n % 10 == 4) || n % 10 == 9) &amp;&amp; (n % 100 &lt; 10 || n % 100 &gt; 19) &amp;&amp; (n % 100 &lt; 70 || n % 100 &gt; 79) &amp;&amp; (n % 100 &lt; 90 || n % 100 &gt; 99)) ? 2 : ((n != 0 &amp;&amp; n % 1000000 == 0) ? 3 : 4)))</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 81, 101, 1001, …</code></li><li><span>two</span><code>2, 22, 32, 42, 52, 62, 82, 102, 1002, …</code></li><li><span>few</span><code>3, 4, 9, 23, 24, 29, 33, 34, 39, 43, 44, 49, 103, 1003, …</code></li><li><span>many</span><code>1000000, …</code></li><li><span>other</span><code>0, 5~8, 10~20, 100, 1000, 10000, 100000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>brx</td>
-                            <td>Bodo</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>bs</td>
-                            <td>Bosnian</td>
-                            <td>3</td>
-                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ca</td>
-                            <td>Catalan</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>cgg</td>
-                            <td>Chiga</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>chr</td>
-                            <td>Cherokee</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ckb</td>
-                            <td>Sorani Kurdish</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>cs</td>
-                            <td>Czech</td>
-                            <td>3</td>
-                            <td>(n == 1) ? 0 : ((n &gt;= 2 &amp;&amp; n &lt;= 4) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>few</span><code>2~4</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>cy</td>
-                            <td>Welsh</td>
-                            <td>6</td>
-                            <td>(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n == 3) ? 3 : ((n == 6) ? 4 : 5))))</td>
-                            <td><ol class="cases" start="0"><li><span>zero</span><code>0</code></li><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>few</span><code>3</code></li><li><span>many</span><code>6</code></li><li><span>other</span><code>4, 5, 7~20, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>da</td>
-                            <td>Danish</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>de</td>
-                            <td>German</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>dsb</td>
-                            <td>Lower Sorbian</td>
-                            <td>4</td>
-                            <td>(n % 100 == 1) ? 0 : ((n % 100 == 2) ? 1 : ((n % 100 == 3 || n % 100 == 4) ? 2 : 3))</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 101, 201, 301, 401, 501, 601, 701, 1001, …</code></li><li><span>two</span><code>2, 102, 202, 302, 402, 502, 602, 702, 1002, …</code></li><li><span>few</span><code>3, 4, 103, 104, 203, 204, 303, 304, 403, 404, 503, 504, 603, 604, 703, 704, 1003, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>dv</td>
-                            <td>Divehi</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>dz</td>
-                            <td>Dzongkha</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ee</td>
-                            <td>Ewe</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>el</td>
-                            <td>Greek</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>en</td>
-                            <td>English</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>eo</td>
-                            <td>Esperanto</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>es</td>
-                            <td>Spanish</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>et</td>
-                            <td>Estonian</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>eu</td>
-                            <td>Basque</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>fa</td>
-                            <td>Persian</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ff</td>
-                            <td>Fulah</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>fi</td>
-                            <td>Finnish</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>fil</td>
-                            <td>Filipino</td>
-                            <td>2</td>
-                            <td>n != 1 &amp;&amp; n != 2 &amp;&amp; n != 3 &amp;&amp; (n % 10 == 4 || n % 10 == 6 || n % 10 == 9)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0~3, 5, 7, 8, 10~13, 15, 17, 18, 20, 21, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span><code>4, 6, 9, 14, 16, 19, 24, 26, 104, 1004, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>fo</td>
-                            <td>Faroese</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>fr</td>
-                            <td>French</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>fur</td>
-                            <td>Friulian</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>fy</td>
-                            <td>Western Frisian</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ga</td>
-                            <td>Irish</td>
-                            <td>5</td>
-                            <td>(n == 1) ? 0 : ((n == 2) ? 1 : ((n &gt;= 3 &amp;&amp; n &lt;= 6) ? 2 : ((n &gt;= 7 &amp;&amp; n &lt;= 10) ? 3 : 4)))</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>few</span><code>3~6</code></li><li><span>many</span><code>7~10</code></li><li><span>other</span><code>0, 11~25, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>gd</td>
-                            <td>Scottish Gaelic</td>
-                            <td>4</td>
-                            <td>(n == 1 || n == 11) ? 0 : ((n == 2 || n == 12) ? 1 : ((n &gt;= 3 &amp;&amp; n &lt;= 10 || n &gt;= 13 &amp;&amp; n &lt;= 19) ? 2 : 3))</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 11</code></li><li><span>two</span><code>2, 12</code></li><li><span>few</span><code>3~10, 13~19</code></li><li><span>other</span><code>0, 20~34, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>gl</td>
-                            <td>Galician</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>gsw</td>
-                            <td>Swiss German</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>gu</td>
-                            <td>Gujarati</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>guw</td>
-                            <td>Gun</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>gv</td>
-                            <td>Manx</td>
-                            <td>4</td>
-                            <td>(n % 10 == 1) ? 0 : ((n % 10 == 2) ? 1 : ((n % 100 == 0 || n % 100 == 20 || n % 100 == 40 || n % 100 == 60 || n % 100 == 80) ? 2 : 3))</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 11, 21, 31, 41, 51, 61, 71, 101, 1001, …</code></li><li><span>two</span><code>2, 12, 22, 32, 42, 52, 62, 72, 102, 1002, …</code></li><li><span>few</span><code>0, 20, 40, 60, 80, 100, 120, 140, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span><code>3~10, 13~19, 23, 103, 1003, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ha</td>
-                            <td>Hausa</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>haw</td>
-                            <td>Hawaiian</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>he</td>
-                            <td>Hebrew</td>
-                            <td>4</td>
-                            <td>(n == 1) ? 0 : ((n == 2) ? 1 : (((n &lt; 0 || n &gt; 10) &amp;&amp; n % 10 == 0) ? 2 : 3))</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>many</span><code>20, 30, 40, 50, 60, 70, 80, 90, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span><code>0, 3~17, 101, 1001, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>hi</td>
-                            <td>Hindi</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>hr</td>
-                            <td>Croatian</td>
-                            <td>3</td>
-                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>hsb</td>
-                            <td>Upper Sorbian</td>
-                            <td>4</td>
-                            <td>(n % 100 == 1) ? 0 : ((n % 100 == 2) ? 1 : ((n % 100 == 3 || n % 100 == 4) ? 2 : 3))</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 101, 201, 301, 401, 501, 601, 701, 1001, …</code></li><li><span>two</span><code>2, 102, 202, 302, 402, 502, 602, 702, 1002, …</code></li><li><span>few</span><code>3, 4, 103, 104, 203, 204, 303, 304, 403, 404, 503, 504, 603, 604, 703, 704, 1003, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>hu</td>
-                            <td>Hungarian</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>hy</td>
-                            <td>Armenian</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>id</td>
-                            <td>Indonesian</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ig</td>
-                            <td>Igbo</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ii</td>
-                            <td>Sichuan Yi</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>is</td>
-                            <td>Icelandic</td>
-                            <td>2</td>
-                            <td>n % 10 != 1 || n % 100 == 11</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>it</td>
-                            <td>Italian</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>iu</td>
-                            <td>Inuktitut</td>
-                            <td>3</td>
-                            <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ja</td>
-                            <td>Japanese</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>jbo</td>
-                            <td>Lojban</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>jgo</td>
-                            <td>Ngomba</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>jmc</td>
-                            <td>Machame</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>jv</td>
-                            <td>Javanese</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ka</td>
-                            <td>Georgian</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>kab</td>
-                            <td>Kabyle</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>kaj</td>
-                            <td>Jju</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>kcg</td>
-                            <td>Tyap</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>kde</td>
-                            <td>Makonde</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>kea</td>
-                            <td>Kabuverdianu</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>kk</td>
-                            <td>Kazakh</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>kkj</td>
-                            <td>Kako</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>kl</td>
-                            <td>Kalaallisut</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>km</td>
-                            <td>Khmer</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>kn</td>
-                            <td>Kannada</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ko</td>
-                            <td>Korean</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ks</td>
-                            <td>Kashmiri</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ksb</td>
-                            <td>Shambala</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ksh</td>
-                            <td>Colognian</td>
-                            <td>3</td>
-                            <td>(n == 0) ? 0 : ((n == 1) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>zero</span><code>0</code></li><li><span>one</span><code>1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ku</td>
-                            <td>Kurdish</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>kw</td>
-                            <td>Cornish</td>
-                            <td>3</td>
-                            <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ky</td>
-                            <td>Kyrgyz</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>lag</td>
-                            <td>Langi</td>
-                            <td>3</td>
-                            <td>(n == 0) ? 0 : ((n == 1) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>zero</span><code>0</code></li><li><span>one</span><code>1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>lb</td>
-                            <td>Luxembourgish</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>lg</td>
-                            <td>Ganda</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>lkt</td>
-                            <td>Lakota</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ln</td>
-                            <td>Lingala</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>lo</td>
-                            <td>Lao</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>lt</td>
-                            <td>Lithuanian</td>
-                            <td>3</td>
-                            <td>(n % 10 == 1 &amp;&amp; (n % 100 &lt; 11 || n % 100 &gt; 19)) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 9 &amp;&amp; (n % 100 &lt; 11 || n % 100 &gt; 19)) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~9, 22~29, 102, 1002, …</code></li><li><span>other</span><code>0, 10~20, 30, 40, 50, 60, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>lv</td>
-                            <td>Latvian</td>
-                            <td>3</td>
-                            <td>(n % 10 == 0 || n % 100 &gt;= 11 &amp;&amp; n % 100 &lt;= 19) ? 0 : ((n % 10 == 1 &amp;&amp; n % 100 != 11) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>zero</span><code>0, 10~20, 30, 40, 50, 60, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>other</span><code>2~9, 22~29, 102, 1002, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>mas</td>
-                            <td>Masai</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>mg</td>
-                            <td>Malagasy</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>mgo</td>
-                            <td>Metaʼ</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>mk</td>
-                            <td>Macedonian</td>
-                            <td>2</td>
-                            <td>n % 10 != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 11, 21, 31, 41, 51, 61, 71, 101, 1001, …</code></li><li><span>other</span><code>0, 2~10, 12~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ml</td>
-                            <td>Malayalam</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>mn</td>
-                            <td>Mongolian</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>mr</td>
-                            <td>Marathi</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ms</td>
-                            <td>Malay</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>mt</td>
-                            <td>Maltese</td>
-                            <td>4</td>
-                            <td>(n == 1) ? 0 : ((n == 0 || n % 100 &gt;= 2 &amp;&amp; n % 100 &lt;= 10) ? 1 : ((n % 100 &gt;= 11 &amp;&amp; n % 100 &lt;= 19) ? 2 : 3))</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>few</span><code>0, 2~10, 102~107, 1002, …</code></li><li><span>many</span><code>11~19, 111~117, 1011, …</code></li><li><span>other</span><code>20~35, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>my</td>
-                            <td>Burmese</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>nah</td>
-                            <td>Nahuatl</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>naq</td>
-                            <td>Nama</td>
-                            <td>3</td>
-                            <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>nb</td>
-                            <td>Norwegian Bokmål</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>nd</td>
-                            <td>North Ndebele</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ne</td>
-                            <td>Nepali</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>nl</td>
-                            <td>Dutch</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>nn</td>
-                            <td>Norwegian Nynorsk</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>nnh</td>
-                            <td>Ngiemboon</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>no</td>
-                            <td>Norwegian</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>nqo</td>
-                            <td>NʼKo</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>nr</td>
-                            <td>South Ndebele</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>nso</td>
-                            <td>Northern Sotho</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ny</td>
-                            <td>Nyanja</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>nyn</td>
-                            <td>Nyankole</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>om</td>
-                            <td>Oromo</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>or</td>
-                            <td>Oriya</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>os</td>
-                            <td>Ossetic</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>pa</td>
-                            <td>Punjabi</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>pap</td>
-                            <td>Papiamento</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>pl</td>
-                            <td>Polish</td>
-                            <td>3</td>
-                            <td>(n == 1) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>prg</td>
-                            <td>Prussian</td>
-                            <td>3</td>
-                            <td>(n % 10 == 0 || n % 100 &gt;= 11 &amp;&amp; n % 100 &lt;= 19) ? 0 : ((n % 10 == 1 &amp;&amp; n % 100 != 11) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>zero</span><code>0, 10~20, 30, 40, 50, 60, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>other</span><code>2~9, 22~29, 102, 1002, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ps</td>
-                            <td>Pashto</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>pt</td>
-                            <td>Portuguese</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>pt_PT</td>
-                            <td>European Portuguese</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>rm</td>
-                            <td>Romansh</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ro</td>
-                            <td>Romanian</td>
-                            <td>3</td>
-                            <td>(n == 1) ? 0 : ((n == 0 || n != 1 &amp;&amp; n % 100 &gt;= 1 &amp;&amp; n % 100 &lt;= 19) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>few</span><code>0, 2~16, 101, 1001, …</code></li><li><span>other</span><code>20~35, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>rof</td>
-                            <td>Rombo</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>root</td>
-                            <td>Root</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ru</td>
-                            <td>Russian</td>
-                            <td>3</td>
-                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>rwk</td>
-                            <td>Rwa</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>sah</td>
-                            <td>Sakha</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>saq</td>
-                            <td>Samburu</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>se</td>
-                            <td>Northern Sami</td>
-                            <td>3</td>
-                            <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>seh</td>
-                            <td>Sena</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ses</td>
-                            <td>Koyraboro Senni</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>sg</td>
-                            <td>Sango</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>sh</td>
-                            <td>Serbo-Croatian</td>
-                            <td>3</td>
-                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>shi</td>
-                            <td>Tachelhit</td>
-                            <td>3</td>
-                            <td>(n == 0 || n == 1) ? 0 : ((n &gt;= 2 &amp;&amp; n &lt;= 10) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>few</span><code>2~10</code></li><li><span>other</span><code>11~26, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>si</td>
-                            <td>Sinhala</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>sk</td>
-                            <td>Slovak</td>
-                            <td>3</td>
-                            <td>(n == 1) ? 0 : ((n &gt;= 2 &amp;&amp; n &lt;= 4) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>few</span><code>2~4</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>sl</td>
-                            <td>Slovenian</td>
-                            <td>4</td>
-                            <td>(n % 100 == 1) ? 0 : ((n % 100 == 2) ? 1 : ((n % 100 == 3 || n % 100 == 4) ? 2 : 3))</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 101, 201, 301, 401, 501, 601, 701, 1001, …</code></li><li><span>two</span><code>2, 102, 202, 302, 402, 502, 602, 702, 1002, …</code></li><li><span>few</span><code>3, 4, 103, 104, 203, 204, 303, 304, 403, 404, 503, 504, 603, 604, 703, 704, 1003, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>sma</td>
-                            <td>Southern Sami</td>
-                            <td>3</td>
-                            <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>smi</td>
-                            <td>Sami</td>
-                            <td>3</td>
-                            <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>smj</td>
-                            <td>Lule Sami</td>
-                            <td>3</td>
-                            <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>smn</td>
-                            <td>Inari Sami</td>
-                            <td>3</td>
-                            <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>sms</td>
-                            <td>Skolt Sami</td>
-                            <td>3</td>
-                            <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>sn</td>
-                            <td>Shona</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>so</td>
-                            <td>Somali</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>sq</td>
-                            <td>Albanian</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>sr</td>
-                            <td>Serbian</td>
-                            <td>3</td>
-                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ss</td>
-                            <td>Swati</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ssy</td>
-                            <td>Saho</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>st</td>
-                            <td>Southern Sotho</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>sv</td>
-                            <td>Swedish</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>sw</td>
-                            <td>Swahili</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>syr</td>
-                            <td>Syriac</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ta</td>
-                            <td>Tamil</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>te</td>
-                            <td>Telugu</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>teo</td>
-                            <td>Teso</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>th</td>
-                            <td>Thai</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ti</td>
-                            <td>Tigrinya</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>tig</td>
-                            <td>Tigre</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>tk</td>
-                            <td>Turkmen</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>tl</td>
-                            <td>Tagalog</td>
-                            <td>2</td>
-                            <td>n != 1 &amp;&amp; n != 2 &amp;&amp; n != 3 &amp;&amp; (n % 10 == 4 || n % 10 == 6 || n % 10 == 9)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0~3, 5, 7, 8, 10~13, 15, 17, 18, 20, 21, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span><code>4, 6, 9, 14, 16, 19, 24, 26, 104, 1004, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>tn</td>
-                            <td>Tswana</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>to</td>
-                            <td>Tongan</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>tr</td>
-                            <td>Turkish</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ts</td>
-                            <td>Tsonga</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>tzm</td>
-                            <td>Central Atlas Tamazight</td>
-                            <td>2</td>
-                            <td>n &gt;= 2 &amp;&amp; (n &lt; 11 || n &gt; 99)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1, 11~24</code></li><li><span>other</span><code>2~10, 100~106, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ug</td>
-                            <td>Uyghur</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>uk</td>
-                            <td>Ukrainian</td>
-                            <td>3</td>
-                            <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ur</td>
-                            <td>Urdu</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>uz</td>
-                            <td>Uzbek</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>ve</td>
-                            <td>Venda</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>vi</td>
-                            <td>Vietnamese</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>vo</td>
-                            <td>Volapük</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>vun</td>
-                            <td>Vunjo</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>wa</td>
-                            <td>Walloon</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>wae</td>
-                            <td>Walser</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>wo</td>
-                            <td>Wolof</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>xh</td>
-                            <td>Xhosa</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>xog</td>
-                            <td>Soga</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>yi</td>
-                            <td>Yiddish</td>
-                            <td>2</td>
-                            <td>n != 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>yo</td>
-                            <td>Yoruba</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>zh</td>
-                            <td>Chinese</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr><tr>
-                            <td>zu</td>
-                            <td>Zulu</td>
-                            <td>2</td>
-                            <td>n &gt; 1</td>
-                            <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
-                        </tr></tbody>
+                <tbody>
+                    <tr>
+                        <td>af</td>
+                        <td>Afrikaans</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ak</td>
+                        <td>Akan</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>am</td>
+                        <td>Amharic</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ar</td>
+                        <td>Arabic</td>
+                        <td>6</td>
+                        <td>(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n % 100 &gt;= 3 &amp;&amp; n % 100 &lt;= 10) ? 3 : ((n % 100 &gt;= 11 &amp;&amp; n % 100 &lt;= 99) ? 4 : 5))))</td>
+                        <td><ol class="cases" start="0"><li><span>zero</span><code>0</code></li><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>few</span><code>3~10, 103~110, 1003, …</code></li><li><span>many</span><code>11~26, 111, 1011, …</code></li><li><span>other</span><code>100~102, 200~202, 300~302, 400~402, 500~502, 600, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>asa</td>
+                        <td>Asu</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ast</td>
+                        <td>Asturian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>az</td>
+                        <td>Azerbaijani</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>be</td>
+                        <td>Belarusian</td>
+                        <td>3</td>
+                        <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>bem</td>
+                        <td>Bemba</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>bez</td>
+                        <td>Bena</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>bg</td>
+                        <td>Bulgarian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>bh</td>
+                        <td>Bihari</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>bm</td>
+                        <td>Bambara</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>bn</td>
+                        <td>Bengali</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>bo</td>
+                        <td>Tibetan</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>br</td>
+                        <td>Breton</td>
+                        <td>5</td>
+                        <td>(n % 10 == 1 &amp;&amp; n % 100 != 11 &amp;&amp; n % 100 != 71 &amp;&amp; n % 100 != 91) ? 0 : ((n % 10 == 2 &amp;&amp; n % 100 != 12 &amp;&amp; n % 100 != 72 &amp;&amp; n % 100 != 92) ? 1 : ((((n % 10 == 3 || n % 10 == 4) || n % 10 == 9) &amp;&amp; (n % 100 &lt; 10 || n % 100 &gt; 19) &amp;&amp; (n % 100 &lt; 70 || n % 100 &gt; 79) &amp;&amp; (n % 100 &lt; 90 || n % 100 &gt; 99)) ? 2 : ((n != 0 &amp;&amp; n % 1000000 == 0) ? 3 : 4)))</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 81, 101, 1001, …</code></li><li><span>two</span><code>2, 22, 32, 42, 52, 62, 82, 102, 1002, …</code></li><li><span>few</span><code>3, 4, 9, 23, 24, 29, 33, 34, 39, 43, 44, 49, 103, 1003, …</code></li><li><span>many</span><code>1000000, …</code></li><li><span>other</span><code>0, 5~8, 10~20, 100, 1000, 10000, 100000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>brx</td>
+                        <td>Bodo</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>bs</td>
+                        <td>Bosnian</td>
+                        <td>3</td>
+                        <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ca</td>
+                        <td>Catalan</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>cgg</td>
+                        <td>Chiga</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>chr</td>
+                        <td>Cherokee</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ckb</td>
+                        <td>Sorani Kurdish</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>cs</td>
+                        <td>Czech</td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n &gt;= 2 &amp;&amp; n &lt;= 4) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>few</span><code>2~4</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>cy</td>
+                        <td>Welsh</td>
+                        <td>6</td>
+                        <td>(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n == 3) ? 3 : ((n == 6) ? 4 : 5))))</td>
+                        <td><ol class="cases" start="0"><li><span>zero</span><code>0</code></li><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>few</span><code>3</code></li><li><span>many</span><code>6</code></li><li><span>other</span><code>4, 5, 7~20, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>da</td>
+                        <td>Danish</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>de</td>
+                        <td>German</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>dsb</td>
+                        <td>Lower Sorbian</td>
+                        <td>4</td>
+                        <td>(n % 100 == 1) ? 0 : ((n % 100 == 2) ? 1 : ((n % 100 == 3 || n % 100 == 4) ? 2 : 3))</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 101, 201, 301, 401, 501, 601, 701, 1001, …</code></li><li><span>two</span><code>2, 102, 202, 302, 402, 502, 602, 702, 1002, …</code></li><li><span>few</span><code>3, 4, 103, 104, 203, 204, 303, 304, 403, 404, 503, 504, 603, 604, 703, 704, 1003, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>dv</td>
+                        <td>Divehi</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>dz</td>
+                        <td>Dzongkha</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ee</td>
+                        <td>Ewe</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>el</td>
+                        <td>Greek</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>en</td>
+                        <td>English</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>eo</td>
+                        <td>Esperanto</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>es</td>
+                        <td>Spanish</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>et</td>
+                        <td>Estonian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>eu</td>
+                        <td>Basque</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>fa</td>
+                        <td>Persian</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ff</td>
+                        <td>Fulah</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>fi</td>
+                        <td>Finnish</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>fil</td>
+                        <td>Filipino</td>
+                        <td>2</td>
+                        <td>n != 1 &amp;&amp; n != 2 &amp;&amp; n != 3 &amp;&amp; (n % 10 == 4 || n % 10 == 6 || n % 10 == 9)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0~3, 5, 7, 8, 10~13, 15, 17, 18, 20, 21, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span><code>4, 6, 9, 14, 16, 19, 24, 26, 104, 1004, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>fo</td>
+                        <td>Faroese</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>fr</td>
+                        <td>French</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>fur</td>
+                        <td>Friulian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>fy</td>
+                        <td>Western Frisian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ga</td>
+                        <td>Irish</td>
+                        <td>5</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : ((n &gt;= 3 &amp;&amp; n &lt;= 6) ? 2 : ((n &gt;= 7 &amp;&amp; n &lt;= 10) ? 3 : 4)))</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>few</span><code>3~6</code></li><li><span>many</span><code>7~10</code></li><li><span>other</span><code>0, 11~25, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>gd</td>
+                        <td>Scottish Gaelic</td>
+                        <td>4</td>
+                        <td>(n == 1 || n == 11) ? 0 : ((n == 2 || n == 12) ? 1 : ((n &gt;= 3 &amp;&amp; n &lt;= 10 || n &gt;= 13 &amp;&amp; n &lt;= 19) ? 2 : 3))</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 11</code></li><li><span>two</span><code>2, 12</code></li><li><span>few</span><code>3~10, 13~19</code></li><li><span>other</span><code>0, 20~34, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>gl</td>
+                        <td>Galician</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>gsw</td>
+                        <td>Swiss German</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>gu</td>
+                        <td>Gujarati</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>guw</td>
+                        <td>Gun</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>gv</td>
+                        <td>Manx</td>
+                        <td>4</td>
+                        <td>(n % 10 == 1) ? 0 : ((n % 10 == 2) ? 1 : ((n % 100 == 0 || n % 100 == 20 || n % 100 == 40 || n % 100 == 60 || n % 100 == 80) ? 2 : 3))</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 11, 21, 31, 41, 51, 61, 71, 101, 1001, …</code></li><li><span>two</span><code>2, 12, 22, 32, 42, 52, 62, 72, 102, 1002, …</code></li><li><span>few</span><code>0, 20, 40, 60, 80, 100, 120, 140, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span><code>3~10, 13~19, 23, 103, 1003, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ha</td>
+                        <td>Hausa</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>haw</td>
+                        <td>Hawaiian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>he</td>
+                        <td>Hebrew</td>
+                        <td>4</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : (((n &lt; 0 || n &gt; 10) &amp;&amp; n % 10 == 0) ? 2 : 3))</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>many</span><code>20, 30, 40, 50, 60, 70, 80, 90, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span><code>0, 3~17, 101, 1001, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>hi</td>
+                        <td>Hindi</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>hr</td>
+                        <td>Croatian</td>
+                        <td>3</td>
+                        <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>hsb</td>
+                        <td>Upper Sorbian</td>
+                        <td>4</td>
+                        <td>(n % 100 == 1) ? 0 : ((n % 100 == 2) ? 1 : ((n % 100 == 3 || n % 100 == 4) ? 2 : 3))</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 101, 201, 301, 401, 501, 601, 701, 1001, …</code></li><li><span>two</span><code>2, 102, 202, 302, 402, 502, 602, 702, 1002, …</code></li><li><span>few</span><code>3, 4, 103, 104, 203, 204, 303, 304, 403, 404, 503, 504, 603, 604, 703, 704, 1003, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>hu</td>
+                        <td>Hungarian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>hy</td>
+                        <td>Armenian</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Indonesian</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ig</td>
+                        <td>Igbo</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ii</td>
+                        <td>Sichuan Yi</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>in</td>
+                        <td>Indonesian<br /><small><span>Superseded by</span> id</small></td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>is</td>
+                        <td>Icelandic</td>
+                        <td>2</td>
+                        <td>n % 10 != 1 || n % 100 == 11</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>it</td>
+                        <td>Italian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>iu</td>
+                        <td>Inuktitut</td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>iw</td>
+                        <td>Hebrew<br /><small><span>Superseded by</span> he</small></td>
+                        <td>4</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : (((n &lt; 0 || n &gt; 10) &amp;&amp; n % 10 == 0) ? 2 : 3))</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>many</span><code>20, 30, 40, 50, 60, 70, 80, 90, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span><code>0, 3~17, 101, 1001, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ja</td>
+                        <td>Japanese</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>jbo</td>
+                        <td>Lojban</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>jgo</td>
+                        <td>Ngomba</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ji</td>
+                        <td>Yiddish<br /><small><span>Superseded by</span> yi</small></td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>jmc</td>
+                        <td>Machame</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>jv</td>
+                        <td>Javanese</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>jw</td>
+                        <td>Javanese<br /><small><span>Superseded by</span> jv</small></td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ka</td>
+                        <td>Georgian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>kab</td>
+                        <td>Kabyle</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>kaj</td>
+                        <td>Jju</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>kcg</td>
+                        <td>Tyap</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>kde</td>
+                        <td>Makonde</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>kea</td>
+                        <td>Kabuverdianu</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>kk</td>
+                        <td>Kazakh</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>kkj</td>
+                        <td>Kako</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>kl</td>
+                        <td>Kalaallisut</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>km</td>
+                        <td>Khmer</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>kn</td>
+                        <td>Kannada</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ko</td>
+                        <td>Korean</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ks</td>
+                        <td>Kashmiri</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ksb</td>
+                        <td>Shambala</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ksh</td>
+                        <td>Colognian</td>
+                        <td>3</td>
+                        <td>(n == 0) ? 0 : ((n == 1) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>zero</span><code>0</code></li><li><span>one</span><code>1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ku</td>
+                        <td>Kurdish</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>kw</td>
+                        <td>Cornish</td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ky</td>
+                        <td>Kyrgyz</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>lag</td>
+                        <td>Langi</td>
+                        <td>3</td>
+                        <td>(n == 0) ? 0 : ((n == 1) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>zero</span><code>0</code></li><li><span>one</span><code>1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>lb</td>
+                        <td>Luxembourgish</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>lg</td>
+                        <td>Ganda</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>lkt</td>
+                        <td>Lakota</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ln</td>
+                        <td>Lingala</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>lo</td>
+                        <td>Lao</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>lt</td>
+                        <td>Lithuanian</td>
+                        <td>3</td>
+                        <td>(n % 10 == 1 &amp;&amp; (n % 100 &lt; 11 || n % 100 &gt; 19)) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 9 &amp;&amp; (n % 100 &lt; 11 || n % 100 &gt; 19)) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~9, 22~29, 102, 1002, …</code></li><li><span>other</span><code>0, 10~20, 30, 40, 50, 60, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>lv</td>
+                        <td>Latvian</td>
+                        <td>3</td>
+                        <td>(n % 10 == 0 || n % 100 &gt;= 11 &amp;&amp; n % 100 &lt;= 19) ? 0 : ((n % 10 == 1 &amp;&amp; n % 100 != 11) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>zero</span><code>0, 10~20, 30, 40, 50, 60, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>other</span><code>2~9, 22~29, 102, 1002, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>mas</td>
+                        <td>Masai</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>mg</td>
+                        <td>Malagasy</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>mgo</td>
+                        <td>Metaʼ</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>mk</td>
+                        <td>Macedonian</td>
+                        <td>2</td>
+                        <td>n % 10 != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 11, 21, 31, 41, 51, 61, 71, 101, 1001, …</code></li><li><span>other</span><code>0, 2~10, 12~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ml</td>
+                        <td>Malayalam</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>mn</td>
+                        <td>Mongolian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>mo</td>
+                        <td>Moldavian<br /><small><span>Superseded by</span> ro_MD</small></td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n == 0 || n != 1 &amp;&amp; n % 100 &gt;= 1 &amp;&amp; n % 100 &lt;= 19) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>few</span><code>0, 2~16, 101, 1001, …</code></li><li><span>other</span><code>20~35, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>mr</td>
+                        <td>Marathi</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ms</td>
+                        <td>Malay</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>mt</td>
+                        <td>Maltese</td>
+                        <td>4</td>
+                        <td>(n == 1) ? 0 : ((n == 0 || n % 100 &gt;= 2 &amp;&amp; n % 100 &lt;= 10) ? 1 : ((n % 100 &gt;= 11 &amp;&amp; n % 100 &lt;= 19) ? 2 : 3))</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>few</span><code>0, 2~10, 102~107, 1002, …</code></li><li><span>many</span><code>11~19, 111~117, 1011, …</code></li><li><span>other</span><code>20~35, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>my</td>
+                        <td>Burmese</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>nah</td>
+                        <td>Nahuatl</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>naq</td>
+                        <td>Nama</td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>nb</td>
+                        <td>Norwegian Bokmål</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>nd</td>
+                        <td>North Ndebele</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ne</td>
+                        <td>Nepali</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>nl</td>
+                        <td>Dutch</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>nn</td>
+                        <td>Norwegian Nynorsk</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>nnh</td>
+                        <td>Ngiemboon</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>no</td>
+                        <td>Norwegian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>nqo</td>
+                        <td>NʼKo</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>nr</td>
+                        <td>South Ndebele</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>nso</td>
+                        <td>Northern Sotho</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ny</td>
+                        <td>Nyanja</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>nyn</td>
+                        <td>Nyankole</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>om</td>
+                        <td>Oromo</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>or</td>
+                        <td>Oriya</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>os</td>
+                        <td>Ossetic</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>pa</td>
+                        <td>Punjabi</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>pap</td>
+                        <td>Papiamento</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>pl</td>
+                        <td>Polish</td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>prg</td>
+                        <td>Prussian</td>
+                        <td>3</td>
+                        <td>(n % 10 == 0 || n % 100 &gt;= 11 &amp;&amp; n % 100 &lt;= 19) ? 0 : ((n % 10 == 1 &amp;&amp; n % 100 != 11) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>zero</span><code>0, 10~20, 30, 40, 50, 60, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>other</span><code>2~9, 22~29, 102, 1002, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ps</td>
+                        <td>Pashto</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>pt</td>
+                        <td>Portuguese</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>pt_PT</td>
+                        <td>European Portuguese</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>rm</td>
+                        <td>Romansh</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ro</td>
+                        <td>Romanian</td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n == 0 || n != 1 &amp;&amp; n % 100 &gt;= 1 &amp;&amp; n % 100 &lt;= 19) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>few</span><code>0, 2~16, 101, 1001, …</code></li><li><span>other</span><code>20~35, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>rof</td>
+                        <td>Rombo</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ru</td>
+                        <td>Russian</td>
+                        <td>3</td>
+                        <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>rwk</td>
+                        <td>Rwa</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sah</td>
+                        <td>Sakha</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>saq</td>
+                        <td>Samburu</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>se</td>
+                        <td>Northern Sami</td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>seh</td>
+                        <td>Sena</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ses</td>
+                        <td>Koyraboro Senni</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sg</td>
+                        <td>Sango</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sh</td>
+                        <td>Serbo-Croatian</td>
+                        <td>3</td>
+                        <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>shi</td>
+                        <td>Tachelhit</td>
+                        <td>3</td>
+                        <td>(n == 0 || n == 1) ? 0 : ((n &gt;= 2 &amp;&amp; n &lt;= 10) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>few</span><code>2~10</code></li><li><span>other</span><code>11~26, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>si</td>
+                        <td>Sinhala</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sk</td>
+                        <td>Slovak</td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n &gt;= 2 &amp;&amp; n &lt;= 4) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>few</span><code>2~4</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sl</td>
+                        <td>Slovenian</td>
+                        <td>4</td>
+                        <td>(n % 100 == 1) ? 0 : ((n % 100 == 2) ? 1 : ((n % 100 == 3 || n % 100 == 4) ? 2 : 3))</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 101, 201, 301, 401, 501, 601, 701, 1001, …</code></li><li><span>two</span><code>2, 102, 202, 302, 402, 502, 602, 702, 1002, …</code></li><li><span>few</span><code>3, 4, 103, 104, 203, 204, 303, 304, 403, 404, 503, 504, 603, 604, 703, 704, 1003, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sma</td>
+                        <td>Southern Sami</td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>smi</td>
+                        <td>Sami</td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>smj</td>
+                        <td>Lule Sami</td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>smn</td>
+                        <td>Inari Sami</td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sms</td>
+                        <td>Skolt Sami</td>
+                        <td>3</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sn</td>
+                        <td>Shona</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>so</td>
+                        <td>Somali</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sq</td>
+                        <td>Albanian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sr</td>
+                        <td>Serbian</td>
+                        <td>3</td>
+                        <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ss</td>
+                        <td>Swati</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ssy</td>
+                        <td>Saho</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>st</td>
+                        <td>Southern Sotho</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sv</td>
+                        <td>Swedish</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sw</td>
+                        <td>Swahili</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>syr</td>
+                        <td>Syriac</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ta</td>
+                        <td>Tamil</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>te</td>
+                        <td>Telugu</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>teo</td>
+                        <td>Teso</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>th</td>
+                        <td>Thai</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ti</td>
+                        <td>Tigrinya</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>tig</td>
+                        <td>Tigre</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>tk</td>
+                        <td>Turkmen</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>tl</td>
+                        <td>Tagalog</td>
+                        <td>2</td>
+                        <td>n != 1 &amp;&amp; n != 2 &amp;&amp; n != 3 &amp;&amp; (n % 10 == 4 || n % 10 == 6 || n % 10 == 9)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0~3, 5, 7, 8, 10~13, 15, 17, 18, 20, 21, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span><code>4, 6, 9, 14, 16, 19, 24, 26, 104, 1004, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>tn</td>
+                        <td>Tswana</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>to</td>
+                        <td>Tongan</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>tr</td>
+                        <td>Turkish</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ts</td>
+                        <td>Tsonga</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>tzm</td>
+                        <td>Central Atlas Tamazight</td>
+                        <td>2</td>
+                        <td>n &gt;= 2 &amp;&amp; (n &lt; 11 || n &gt; 99)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1, 11~24</code></li><li><span>other</span><code>2~10, 100~106, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ug</td>
+                        <td>Uyghur</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>uk</td>
+                        <td>Ukrainian</td>
+                        <td>3</td>
+                        <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ur</td>
+                        <td>Urdu</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>uz</td>
+                        <td>Uzbek</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>ve</td>
+                        <td>Venda</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>vi</td>
+                        <td>Vietnamese</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>vo</td>
+                        <td>Volapük</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>vun</td>
+                        <td>Vunjo</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>wa</td>
+                        <td>Walloon</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>wae</td>
+                        <td>Walser</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>wo</td>
+                        <td>Wolof</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>xh</td>
+                        <td>Xhosa</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>xog</td>
+                        <td>Soga</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>yi</td>
+                        <td>Yiddish</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>yo</td>
+                        <td>Yoruba</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>zh</td>
+                        <td>Chinese</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>zu</td>
+                        <td>Zulu</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </body>
