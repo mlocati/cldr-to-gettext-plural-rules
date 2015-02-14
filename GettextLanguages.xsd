@@ -16,12 +16,12 @@
 
 	<complexType name="languageType">
 		<sequence>
-			<element name="formula" type="tns:formulaType" minOccurs="1" maxOccurs="1" />
 			<element name="category" type="tns:categoryType" minOccurs="1" maxOccurs="6" />
 		</sequence>
 		<attribute name="id" type="tns:languageIdType" use="required" />
 		<attribute name="name" type="tns:languageNameType" use="required" />
 		<attribute name="supersededBy" type="tns:languageIdType" use="optional" />
+		<attribute name="formula" type="tns:formulaType" use="required" />
 	</complexType>
 	
 	<simpleType name="languageIdType">
