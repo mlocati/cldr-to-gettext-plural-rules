@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <schema
 	xmlns="http://www.w3.org/2001/XMLSchema"
-	xmlns:tns="http://mlocati.github.io/cldr-to-gettext-plural-rules/GettextLanguages.xsd"
-	targetNamespace="http://mlocati.github.io/cldr-to-gettext-plural-rules/GettextLanguages.xsd"
+	xmlns:tns="https://github.com/mlocati/cldr-to-gettext-plural-rules"
+	targetNamespace="https://github.com/mlocati/cldr-to-gettext-plural-rules"
 	elementFormDefault="qualified"
 >
 
