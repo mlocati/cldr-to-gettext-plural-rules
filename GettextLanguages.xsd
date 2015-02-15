@@ -21,6 +21,7 @@
 		<attribute name="id" type="tns:languageIdType" use="required" />
 		<attribute name="name" type="tns:languageNameType" use="required" />
 		<attribute name="supersededBy" type="tns:languageIdType" use="optional" />
+		<attribute name="baseLanguage" type="tns:languageNameType" use="optional" />
 		<attribute name="formula" type="tns:formulaType" use="required" />
 	</complexType>
 	
