@@ -21,6 +21,7 @@
 		<attribute name="id" type="tns:languageIdType" use="required" />
 		<attribute name="name" type="tns:languageNameType" use="required" />
 		<attribute name="supersededBy" type="tns:languageIdType" use="optional" />
+		<attribute name="script" type="tns:scriptNameType" use="optional" />
 		<attribute name="territory" type="tns:territoryNameType" use="optional" />
 		<attribute name="baseLanguage" type="tns:languageNameType" use="optional" />
 		<attribute name="formula" type="tns:formulaType" use="required" />
@@ -33,6 +34,12 @@
 	</simpleType>
 
 	<simpleType name="languageNameType">
+		<restriction base="string">
+			<minLength value="1" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="scriptNameType">
 		<restriction base="string">
 			<minLength value="1" />
 		</restriction>
