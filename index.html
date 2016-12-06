@@ -60,6 +60,13 @@
                         <td><ol class="cases" start="0"><li><span>zero</span><code>0</code></li><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>few</span><code>3~10, 103~110, 1003, …</code></li><li><span>many</span><code>11~26, 111, 1011, …</code></li><li><span>other</span><code>100~102, 200~202, 300~302, 400~402, 500~502, 600, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
                     </tr>
                     <tr>
+                        <td>ars</td>
+                        <td>Najdi Arabic</td>
+                        <td>6</td>
+                        <td>(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n % 100 &gt;= 3 &amp;&amp; n % 100 &lt;= 10) ? 3 : ((n % 100 &gt;= 11 &amp;&amp; n % 100 &lt;= 99) ? 4 : 5))))</td>
+                        <td><ol class="cases" start="0"><li><span>zero</span><code>0</code></li><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>few</span><code>3~10, 103~110, 1003, …</code></li><li><span>many</span><code>11~26, 111, 1011, …</code></li><li><span>other</span><code>100~102, 200~202, 300~302, 400~402, 500~502, 600, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
                         <td>as</td>
                         <td>Assamese</td>
                         <td>2</td>
@@ -131,7 +138,7 @@
                     </tr>
                     <tr>
                         <td>bn</td>
-                        <td>Bengali</td>
+                        <td>Bangla</td>
                         <td>2</td>
                         <td>n &gt; 1</td>
                         <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
@@ -368,6 +375,13 @@
                         <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
                     </tr>
                     <tr>
+                        <td>fa_AF</td>
+                        <td>Dari</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
                         <td>ff</td>
                         <td>Fulah</td>
                         <td>2</td>
@@ -497,7 +511,7 @@
                         <td>he</td>
                         <td>Hebrew</td>
                         <td>4</td>
-                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : (((n &lt; 0 || n &gt; 10) &amp;&amp; n % 10 == 0) ? 2 : 3))</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : ((n &gt; 10 &amp;&amp; n % 10 == 0) ? 2 : 3))</td>
                         <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>many</span><code>20, 30, 40, 50, 60, 70, 80, 90, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span><code>0, 3~17, 101, 1001, …</code></li></ol></td>
                     </tr>
                     <tr>
@@ -588,7 +602,7 @@
                         <td>iw</td>
                         <td>Hebrew<br /><small><span>Superseded by</span> he</small></td>
                         <td>4</td>
-                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : (((n &lt; 0 || n &gt; 10) &amp;&amp; n % 10 == 0) ? 2 : 3))</td>
+                        <td>(n == 1) ? 0 : ((n == 2) ? 1 : ((n &gt; 10 &amp;&amp; n % 10 == 0) ? 2 : 3))</td>
                         <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>many</span><code>20, 30, 40, 50, 60, 70, 80, 90, 100, 1000, 10000, 100000, 1000000, …</code></li><li><span>other</span><code>0, 3~17, 101, 1001, …</code></li></ol></td>
                     </tr>
                     <tr>
@@ -971,7 +985,7 @@
                     </tr>
                     <tr>
                         <td>nqo</td>
-                        <td>NʼKo</td>
+                        <td>N’Ko</td>
                         <td>1</td>
                         <td>0</td>
                         <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
@@ -1013,7 +1027,7 @@
                     </tr>
                     <tr>
                         <td>or</td>
-                        <td>Oriya</td>
+                        <td>Odia</td>
                         <td>2</td>
                         <td>n != 1</td>
                         <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
@@ -1133,6 +1147,13 @@
                     <tr>
                         <td>saq</td>
                         <td>Samburu</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sdh</td>
+                        <td>Southern Kurdish</td>
                         <td>2</td>
                         <td>n != 1</td>
                         <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
@@ -1294,6 +1315,13 @@
                     <tr>
                         <td>sw</td>
                         <td>Swahili</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sw_CD</td>
+                        <td>Congo Swahili</td>
                         <td>2</td>
                         <td>n != 1</td>
                         <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
@@ -1497,6 +1525,13 @@
                     <tr>
                         <td>yo</td>
                         <td>Yoruba</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>yue</td>
+                        <td>Cantonese</td>
                         <td>1</td>
                         <td>0</td>
                         <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
