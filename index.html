@@ -578,6 +578,13 @@
                         <td><ol class="cases" start="0"><li><span>other</span><code>0~15, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
                     </tr>
                     <tr>
+                        <td>io</td>
+                        <td>Ido</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
                         <td>is</td>
                         <td>Icelandic</td>
                         <td>2</td>
@@ -861,8 +868,8 @@
                         <td>mk</td>
                         <td>Macedonian</td>
                         <td>2</td>
-                        <td>n % 10 != 1</td>
-                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 11, 21, 31, 41, 51, 61, 71, 101, 1001, …</code></li><li><span>other</span><code>0, 2~10, 12~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                        <td>n % 10 != 1 || n % 100 == 11</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
                     </tr>
                     <tr>
                         <td>ml</td>
@@ -1092,8 +1099,8 @@
                         <td>pt_PT</td>
                         <td>European Portuguese</td>
                         <td>2</td>
-                        <td>n &gt; 1</td>
-                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
                     </tr>
                     <tr>
                         <td>rm</td>
@@ -1147,6 +1154,20 @@
                     <tr>
                         <td>saq</td>
                         <td>Samburu</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>scn</td>
+                        <td>Sicilian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sd</td>
+                        <td>Sindhi</td>
                         <td>2</td>
                         <td>n != 1</td>
                         <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
@@ -1280,6 +1301,13 @@
                     <tr>
                         <td>sr</td>
                         <td>Serbian</td>
+                        <td>3</td>
+                        <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sr_ME</td>
+                        <td>Montenegrin</td>
                         <td>3</td>
                         <td>(n % 10 == 1 &amp;&amp; n % 100 != 11) ? 0 : ((n % 10 &gt;= 2 &amp;&amp; n % 10 &lt;= 4 &amp;&amp; (n % 100 &lt; 12 || n % 100 &gt; 14)) ? 1 : 2)</td>
                         <td><ol class="cases" start="0"><li><span>one</span><code>1, 21, 31, 41, 51, 61, 71, 81, 101, 1001, …</code></li><li><span>few</span><code>2~4, 22~24, 32~34, 42~44, 52~54, 62, 102, 1002, …</code></li><li><span>other</span><code>0, 5~19, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
