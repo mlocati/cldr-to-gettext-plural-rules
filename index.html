@@ -242,6 +242,13 @@
                         <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
                     </tr>
                     <tr>
+                        <td>doi</td>
+                        <td>Dogri</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
                         <td>dsb</td>
                         <td>Lower Sorbian</td>
                         <td>4</td>
@@ -349,9 +356,9 @@
                     <tr>
                         <td>fr</td>
                         <td>French</td>
-                        <td>2</td>
-                        <td>n &gt; 1</td>
-                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                        <td>3</td>
+                        <td>(n == 0 || n == 1) ? 0 : n != 0 &amp;&amp; n % 1000000 == 0 ? 1 : 2</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>many</span><code>1000000, 1c6, 2c6, 3c6, 4c6, 5c6, 6c6, …</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1c3, 2c3, 3c3, 4c3, 5c3, 6c3, …</code></li></ol></td>
                     </tr>
                     <tr>
                         <td>fur</td>
@@ -739,6 +746,13 @@
                         <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
                     </tr>
                     <tr>
+                        <td>lij</td>
+                        <td>Ligurian</td>
+                        <td>2</td>
+                        <td>n != 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
                         <td>lkt</td>
                         <td>Lakota</td>
                         <td>1</td>
@@ -991,6 +1005,13 @@
                         <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
                     </tr>
                     <tr>
+                        <td>pcm</td>
+                        <td>Nigerian Pidgin</td>
+                        <td>2</td>
+                        <td>n &gt; 1</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>0, 1</code></li><li><span>other</span><code>2~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
                         <td>pl</td>
                         <td>Polish</td>
                         <td>3</td>
@@ -1073,6 +1094,13 @@
                         <td>2</td>
                         <td>n != 1</td>
                         <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>other</span><code>0, 2~16, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
+                    </tr>
+                    <tr>
+                        <td>sat</td>
+                        <td>Santali</td>
+                        <td>3</td>
+                        <td>n == 1 ? 0 : n == 2 ? 1 : 2</td>
+                        <td><ol class="cases" start="0"><li><span>one</span><code>1</code></li><li><span>two</span><code>2</code></li><li><span>other</span><code>0, 3~17, 100, 1000, 10000, 100000, 1000000, …</code></li></ol></td>
                     </tr>
                     <tr>
                         <td>sc</td>
